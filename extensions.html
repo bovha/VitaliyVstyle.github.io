@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<title>Styles and extensions for Firefox, SeaMonkey, Pale Moon</title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+<link rel="shortcut icon" href="contentimages/AddsToolbarandButtons.png"  sizes="16x16" type="image/png">
+<link rel="stylesheet" href="templatemo_style.css" type="text/css" >
+<script type="text/javascript" src="content.js"></script>
+</head>
+<body>
+<div id="templatemo">
+<div id="templatemo_title_section">!IMPORTANT</div>
+<div id="templatemo_menu_panel">
+<div id="templatemo_menu_section">
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="extensions.html" class="current">EXTENSIONS</a></li>
+<li><a href="stylessm.html">STYLES FOR SEAMONKEY</a>
+<ul class="menup">
+<li><a href="seamonkeyfullstyle.html">FULL STYLE</a></li>
+<li><a href="seamonkeymenu.html">MENU</a></li>
+<li><a href="seamonkeyscrollbartooltip.html">SCROLLBAR + TOOLTIP</a></li>
+<li><a href="seamonkeytransparentsidebarwithautohide.html">TRANSPARENT SIDEBAR WITH AUTO HIDE</a></li>
+</ul>
+</li>
+<li><a href="stylesff.html">STYLES FOR FIREFOX</a>
+<ul class="menup">
+<li><a href="firefoxcontrolbuttons.html">CONTROL BUTTONS</a></li>
+<li><a href="firefoxfullstyle.html">FULL STYLE</a></li>
+<li><a href="firefoxmenu.html">MENU</a></li>
+<li><a href="firefoxscrollbartooltip.html">SCROLLBAR + TOOLTIP</a></li>
+<li><a href="firefoxsearchbarshowenginenames.html">SEARCH BAR SHOW ENGINE NAMES</a></li>
+<li><a href="firefoxtransparentsidebarwithautohide.html">TRANSPARENT SIDEBAR WITH AUTO HIDE</a></li>
+</ul>
+</li> 
+</ul> 
+</div>
+</div>
+<div id="templatemo_content_container">
+<div id="templatemo_content">
+<div style="display:block;text-align:left">
+<img src="contentimages/Firefox.svg" alt="" style="vertical-align:middle;width:70px;height:70px;border:none;">   <img src="contentimages/SMon.png"  alt="" style="vertical-align:middle;width:78px;height:78px;border:none;">   <img src="contentimages/PMoon.png"  alt="" style="vertical-align:middle;width:72px;height:72px;border:none;">
+</div>
+<br>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="AddsToolbarandButtons();">Adds Toolbar and Buttons</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Adds Toolbar and Buttons добавляет панель инструментов, кнопки, растягивающие интервалы, интервалы, разделители и пункты в меню для перезагрузки. Вы найдете кнопки, для управления скрытыми функциями или требующими слишком много кликов, но некоторые функции добавляет данное расширение.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="AddToolbar();">Add Toolbar</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Add Toolbar добавляет панель инструментов, растягивающие интервалы, интервалы и разделители.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="AgentSheet();">Agent Sheet</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Agent Sheet изменяет скроллбар и всплывающие подсказки.<br>
+После установки для правильного отображения скроллбара, откройте новое окно браузера или перезапустите его.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="ControlButtons();">Control Buttons</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+ОС: Windows, Linux.<br>
+Control Buttons добавляет кнопки (с дополнительными функциями) управления окном. В SeaMonkey и в Firefox (Linux) скрывает / заменяет заголовок окна.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="eCleaner();">eCleaner</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+eCleaner очищает настройки расширений оставленные после удаления, а также мусорных файлов в профиле и т. д. Исходный код взят из Preferences Monitor с некоторыми изменениями, добавлена кнопка для панели инструментов и русская локаль.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="Rightclickclosetab();">Right click close tab</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Right click close tab позволяет закрывать вкладки правой кнопкой мыши. Для отмены удерживайте клавишу Shift + ПКМ чтобы появилось контекстное меню вкладки.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="FlipCloseTab();">Flip Close Tab</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Flip Close Tab переключает фокус на последнюю посещённую вкладку при закрытии текущей или при клике по кнопке расширения.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="Oldsearch();">Old search</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Не совместимо с Quick Search Bar (см. ниже).<br>
+Old Search возвращает старый способ поиска (в FF 43 и выше) для панели поиска. И добавляет новые функции: индикатор добавления поиска, опция очистить форму после поиска и др.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="QuickSearchBar();">Quick Search Bar</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Не совместимо с Old Search (см. выше).<br>
+Оптимизирует строку поиска для быстрого выбора поисковой системы.
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="ProgressIndicator();">Progress Indicator</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Progress Indicator добавляет на панель инструментов индикатор загрузки страницы. Может использоваться вместо растягивающегося интервала.<br>
+Для изменения цвета индикатора можно использовать такой стиль:
+<pre>
+<code>
+#b-statusbar-progresspanel #statusbar-icon .progress-bar {
+    background: linear-gradient(rgb(247,182,82), rgb(215,98,10)) !important;
+}
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="TabsFocus();">Tabs Focus</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Tabs Focus переключает вкладки при наведении мыши если не включен предварительный просмотр...
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="StyleCSS();">Style CSS</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Style CSS простое расширение для изменения стилей. Для создания правил CSS откройте папку style_css которая находится в каталоге профиля<br>
+или используйте для открытия кнопку расширения. <br>
+Для изменения интерфейса браузера на определённой странице используйте в начале такой код <code>#main-window[stylecssurl="URL адрес полностью"]</code>,<br>
+или <code>#main-window[stylecssurl^="префикс URL адреса"]</code>
+</div>
+</div>
+</div>
+</div>
+<br>
+<script type="text/javascript">
+function AddsToolbarandButtons() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Adds Toolbar and Buttons</title><link rel='shortcut icon' href='contentimages/AddsToolbarandButtons.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/AddsToolbarandButtons.png' border='0'><strong>Adds Toolbar and Buttons</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Adds Toolbar and Buttons': {URL: 'extensions/adds_toolbar_and_buttons-2.0.1-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/AddsToolbarandButtons.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/adds_toolbar_and_buttons-2.0.1-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=1&back_link=contentimages/AddsToolbarandButtons.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function AddToolbar() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Add Toolbar</title><link rel='shortcut icon' href='contentimages/AddToolbar.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/AddToolbar.png' border='0'><strong>Add Toolbar</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Add Toolbar': {URL: 'extensions/add_toolbar-1.3.4-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/AddToolbar.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/add_toolbar-1.3.4-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=2&back_link=contentimages/AddToolbar.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function AgentSheet() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Agent Sheet</title><link rel='shortcut icon' href='contentimages/AgentSheet.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/AgentSheet.png' border='0'><strong>Agent Sheet</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Agent Sheet': {URL: 'extensions/agent_sheet-1.8.8-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/AgentSheet.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/agent_sheet-1.8.8-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=3&back_link=contentimages/AgentSheet.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function ControlButtons() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Control Buttons</title><link rel='shortcut icon' href='contentimages/ControlButtons.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/ControlButtons.png' border='0'><strong>Control Buttons</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Control Buttons': {URL: 'extensions/control_buttons-4.0.4-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/ControlButtons.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/control_buttons-4.0.4-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=4&back_link=contentimages/ControlButtons.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function eCleaner() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>eCleaner</title><link rel='shortcut icon' href='contentimages/eCleaner.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/eCleaner.png' border='0'><strong>eCleaner</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'eCleaner': {URL: 'extensions/ecleaner-2.5.8-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/eCleaner.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/ecleaner-2.5.8-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=5&back_link=contentimages/eCleaner.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function Rightclickclosetab() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Right click close tab</title><link rel='shortcut icon' href='contentimages/Rightclickclosetab.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/Rightclickclosetab.png' border='0'><strong>Right click close tab</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Right click close tab': {URL: 'extensions/right_click_close_tab-1.7.5-sm-fx.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/Rightclickclosetab.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/right_click_close_tab-1.7.5-sm-fx.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=6&back_link=contentimages/Rightclickclosetab.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function FlipCloseTab() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Flip Close Tab</title><link rel='shortcut icon' href='contentimages/FlipCloseTab.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/FlipCloseTab.png' border='0'><strong>Flip Close Tab</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Flip Close Tab': {URL: 'extensions/flip_close_tab-1.1.4-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/FlipCloseTab.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/flip_close_tab-1.1.4-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=7&back_link=contentimages/FlipCloseTab.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function Oldsearch() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Old search</title><link rel='shortcut icon' href='contentimages/Oldsearch.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/Oldsearch.png' border='0'><strong>Old search</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Old search': {URL: 'extensions/old_search-1.8.7-fx.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/Oldsearch.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/old_search-1.8.7-fx.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=8&back_link=contentimages/Oldsearch.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function QuickSearchBar() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Quick Search Bar</title><link rel='shortcut icon' href='contentimages/QuickSearchBar.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/QuickSearchBar.png' border='0'><strong>Quick Search Bar</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Quick Search Bar': {URL: 'extensions/quick_search_bar-5.7.4-fx.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/QuickSearchBar.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/quick_search_bar-5.7.4-fx.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=9&back_link=contentimages/QuickSearchBar.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function ProgressIndicator() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Progress Indicator</title><link rel='shortcut icon' href='contentimages/ProgressIndicator.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/ProgressIndicator.png' border='0'><strong>Progress Indicator</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Progress Indicator': {URL: 'extensions/progress_indicator-0.1.5-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/ProgressIndicator.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/progress_indicator-0.1.5-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=10&back_link=contentimages/ProgressIndicator.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function TabsFocus() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Tabs Focus</title><link rel='shortcut icon' href='contentimages/TabsFocus.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/TabsFocus.png' border='0'><strong>Tabs Focus</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Tabs Focus': {URL: 'extensions/tabs_focus-1.1.6-sm-fx.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/TabsFocus.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/tabs_focus-1.1.6-sm-fx.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=11&back_link=contentimages/TabsFocus.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function StyleCSS() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>Style CSS</title><link rel='shortcut icon' href='contentimages/StyleCSS.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/StyleCSS.png' border='0'><strong>Style CSS</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Style CSS': {URL: 'extensions/style_css-0.2.6-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/StyleCSS.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/style_css-0.2.6-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=12&back_link=contentimages/StyleCSS.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+</script>
+</div>
+</div>
+</div>
+</body>
+</html>

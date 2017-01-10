@@ -1,0 +1,187 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*AGENT_SHEET*/
+/* 
+Автор: Виталий В.
+ОС: Windows, Linux.
+Сайт: https://sites.google.com/site/serials101
+*/
+/*Скроллбар*/
+scrollbar {
+    -moz-appearance: none !important;
+    position: relative !important;
+    background: none !important;
+    z-index: 2147483647 !important;
+    padding: 0px !important;
+}
+
+scrollbar[orient="vertical"] {
+    -moz-margin-start: -9px !important;
+    -moz-box-pack: start !important;
+    min-width: 9px !important;
+}
+
+scrollbar[orient="vertical"]:hover {
+    -moz-margin-start: -15px !important;
+    -moz-box-pack: end !important;
+    min-width: 15px !important;
+}
+
+scrollbar[orient="horizontal"] {
+    margin-top: -9px !important;
+    -moz-box-align: start !important;
+    min-height: 9px !important;
+}
+
+scrollbar[orient="horizontal"]:hover {
+    margin-top: -15px !important;
+    -moz-box-align: end !important;
+    min-height: 15px !important;
+}
+
+scrollbar > slider > thumb,
+scrollbar > scrollbarbutton {
+    -moz-appearance: none !important;
+    border: 2px solid transparent !important;
+    -moz-border-top-colors: rgba(0,0,0,0.4) rgba(255,255,255,0.4) !important;
+    -moz-border-left-colors: rgba(0,0,0,0.4) rgba(255,255,255,0.4) !important;
+    -moz-border-right-colors: rgba(0,0,0,0.4) rgba(255,255,255,0.4) !important;
+    -moz-border-bottom-colors: rgba(0,0,0,0.4) rgba(255,255,255,0.4) !important;
+    border-radius: 0 !important;
+    background-origin: padding-box !important;
+    background-clip: border-box !important;
+    background-color: rgba(127,127,127,0.5) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+scrollbar > slider > thumb {
+    background-image: repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar[orient="vertical"] > slider > thumb {
+    min-width: 9px !important;
+}
+
+scrollbar[orient="horizontal"] > slider > thumb {
+    min-height: 9px !important;
+}
+
+scrollbar[orient="vertical"]:hover > slider > thumb {
+    min-width: 15px !important;
+}
+
+scrollbar[orient="horizontal"]:hover > slider > thumb {
+    min-height: 15px !important;
+}
+
+scrollbar[orient="vertical"] > slider > thumb:hover {
+    background-color: rgba(127,127,127,0.65) !important;
+}
+
+scrollbar[orient="horizontal"] > slider > thumb:hover {
+    background-color: rgba(127,127,127,0.65) !important;
+}
+
+scrollbar[orient="vertical"] > slider > thumb:active {
+    background-color: rgba(127,127,127,0.8) !important;
+}
+
+scrollbar[orient="horizontal"] > slider > thumb:active {
+    background-color: rgba(127,127,127,0.8) !important;
+}
+
+scrollbar[orient="vertical"] > scrollbarbutton {
+    min-width: 9px !important;
+    min-height: 15px !important;
+}
+
+scrollbar[orient="horizontal"] > scrollbarbutton {
+    min-width: 15px !important;
+    min-height: 9px !important;
+}
+
+scrollbar[orient="vertical"]:hover > scrollbarbutton {
+    min-width: 15px !important;
+    min-height: 15px !important;
+}
+
+scrollbar[orient="horizontal"]:hover > scrollbarbutton {
+    min-width: 15px !important;
+    min-height: 15px !important;
+}
+
+scrollbar > scrollbarbutton:not([disabled="true"]):hover {
+    background-color: rgba(127,127,127,0.65) !important;
+}
+
+scrollbar > scrollbarbutton:not([disabled="true"]):hover:active {
+    background-color: rgba(127,127,127,0.8) !important;
+}
+
+scrollbar > scrollbarbutton[type="increment"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0.75,0 3.25,2.5 0.75,5 1.75,5 4.25,2.5 1.75,0 Z' style='fill:lightgrey;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar > scrollbarbutton[type="increment"][disabled="true"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0.75,0 3.25,2.5 0.75,5 1.75,5 4.25,2.5 1.75,0 Z' style='fill:silver;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0,0.75 2.5,3.25 5,0.75 5,1.75 2.5,4.25 0,1.75 Z' style='fill:lightgrey;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"][disabled="true"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0,0.75 2.5,3.25 5,0.75 5,1.75 2.5,4.25 0,1.75 Z' style='fill:silver;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar > scrollbarbutton[type="decrement"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 4.25,5 1.75,2.5 4.25,0 3.25,0 0.75,2.5 3.25,5 Z' style='fill:lightgrey;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar > scrollbarbutton[type="decrement"][disabled="true"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 4.25,5 1.75,2.5 4.25,0 3.25,0 0.75,2.5 3.25,5 Z' style='fill:silver;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0,4.25 2.5,1.75 5,4.25 5,3.25 2.5,0.75 0,3.25 Z' style='fill:lightgrey;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"] {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='5' width='5'><path d='M 0,4.25 2.5,1.75 5,4.25 5,3.25 2.5,0.75 0,3.25 Z' style='fill:silver;shape-rendering:crispEdges'/></svg>"), repeating-linear-gradient(-45deg, rgba(127,127,127,0.2) 0px, rgba(127,127,127,0.2) 4px, rgba(0,0,0,0.2) 4px, rgba(0,0,0,0.2) 8px) !important;
+}
+/*--------------------------------*/
+
+/*Тултипы*/
+tooltip {
+    -moz-appearance: none !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    -moz-border-top-colors: rgba(0,0,0,0.1) rgba(255,255,255,0.6) !important;
+    -moz-border-left-colors: rgba(0,0,0,0.1) rgba(255,255,255,0.6) !important;
+    -moz-border-right-colors: rgba(0,0,0,0.1) rgba(255,255,255,0.6) !important;
+    -moz-border-bottom-colors: rgba(0,0,0,0.1) rgba(255,255,255,0.6) !important;
+    background-color: transparent !important;
+    background-image: repeating-linear-gradient(-45deg, rgba(21,21,21,0.7) 0px, rgba(21,21,21,0.7) 8px, rgba(11,11,11,0.7) 8px, rgba(11,11,11,0.7) 16px) !important;
+    background-origin: border-box !important;
+    background-clip: border-box !important;
+    background-repeat: no-repeat !important;
+    background-position: 0% 0% !important;
+    background-size: auto !important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+}
+
+tooltip description:not([style]) {
+    color: whitesmoke !important;
+    text-shadow: none !important;
+}
+
+tooltip description[style*="color: grey"] {
+    color: silver !important;
+    text-shadow: none !important;
+}
+
+tooltip .text-link {
+    color: lightskyblue !important;
+}
+/*--------------------------------*/
