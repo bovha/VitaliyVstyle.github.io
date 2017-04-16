@@ -5,14 +5,14 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>1.1.7</em:version> 
+            <em:version>1.1.8</em:version> 
             <em:targetApplication>
               <RDF:Description>
                 <!-- Firefox -->
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>24.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
-                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.7-fx-sm.xpi</em:updateLink>
+                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.8-fx-sm.xpi</em:updateLink>
                 <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/tabsfocus.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
@@ -22,7 +22,7 @@
                 <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
                 <em:minVersion>2.1</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
-                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.7-fx-sm.xpi</em:updateLink>
+                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.8-fx-sm.xpi</em:updateLink>
                 <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/tabsfocus.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
@@ -32,7 +32,7 @@
                 <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
                 <em:minVersion>25.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
-                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.7-fx-sm.xpi</em:updateLink>
+                <em:updateLink>https://vitaliyvstyle.github.io/extensions/tabs_focus-1.1.8-fx-sm.xpi</em:updateLink>
                 <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/tabsfocus.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
