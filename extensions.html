@@ -235,8 +235,26 @@ Tabs Focus переключает вкладки при наведении мы�
 <div style="display:none;">
 Style CSS расширение для изменения стилей. Для создания правил CSS откройте папку style_css которая находится в каталоге профиля<br>
 или используйте для открытия кнопку расширения. <br>
-Для изменения интерфейса браузера на определённой странице используйте в начале такой код <code>#main-window[stylecssurl="URL адрес полностью"]</code>,<br>
+Для изменения интерфейса браузера на определённой странице используйте в начале такой код <code>#main-window[stylecssurl="URL адрес полностью"]</code><br>
 или <code>#main-window[stylecssurl^="префикс URL адреса"]</code>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div>
+<div class="link">
+<button class="installbutton" onclick="UserAgentandotherbuttons();">User Agent and other buttons</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+</div>
+<div class="spoilers">
+<div>
+<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+</div>
+<div>
+<div style="display:none;">
+Юзер агент, читать почту, запуск приложений с аргументами и др... <br>
+Разделяйте аргументы запятыми, если используется более одного аргумента для запуска приложения,<br>
+пример аргументов для запуска SeaMonkey Mail <code>-no-remote,-mail,-P,default</code>
 </div>
 </div>
 </div>
@@ -313,6 +331,12 @@ function StyleCSS() {
 var win = window.open("", "_blank");
 win.document.open();
 win.document.write("<!DOCTYPE html><html><head><title>Style CSS</title><link rel='shortcut icon' href='contentimages/StyleCSS.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} img {padding-right: 5px;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/StyleCSS.png' border='0'><strong>Style CSS</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Style CSS': {URL: 'extensions/style_css-0.2.8-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/StyleCSS.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/style_css-0.2.8-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=12&back_link=contentimages/StyleCSS.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
+win.document.close();
+}
+function UserAgentandotherbuttons() {
+var win = window.open("", "_blank");
+win.document.open();
+win.document.write("<!DOCTYPE html><html><head><title>User Agent and other buttons</title><link rel='shortcut icon' href='contentimages/UserAgentandotherbuttons.png'  sizes='16x16' type='image/png'><style type='text/css'>body {background:#1b1b1b;color:#ffbf23;} img {padding-right: 5px;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;background:#008acb;border:none;border-radius:2px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;}</style></head><body><div><img src='contentimages/UserAgentandotherbuttons.png' border='0'><strong>User Agent and other buttons</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'User Agent and other buttons': {URL: 'extensions/user_agent_and_other_buttons-1.1.2-fx-sm.xpi', IconURL: 'https://vitaliyvstyle.github.io/contentimages/UserAgentandotherbuttons.png'}}); loadimage();} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/user_agent_and_other_buttons-1.1.2-fx-sm.xpi', '_top'); loadimage();} function loadimage() {var img = new Image(); var img2 = new Image(); img.src = 'http://counter.boloto.org/cgi/jump.php?id=1225&l_id=14&back_link=contentimages/UserAgentandotherbuttons.png'; img2.src = 'http://counter.mirohost.net/counter.php?id=VitaliyV&st=img';}</" + "script></body></html>");
 win.document.close();
 }
 </script>
