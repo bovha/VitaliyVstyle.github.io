@@ -16,7 +16,7 @@
 <div id="templatemo_menu_section">
 <ul>
 <li><a href="index.html">HOME</a></li>
-<li><a href="extensions.html" class="current">EXTENSIONS</a></li>
+<li class="select"><a href="extensions.html" class="current">EXTENSIONS</a></li>
 <li><a href="stylessm.html">STYLES FOR SEAMONKEY</a>
 <ul class="menup">
 <li><a href="seamonkeyfullstyle.html">FULL STYLE</a></li>
@@ -27,6 +27,7 @@
 <li><a href="pmfullstyle.html">FULL STYLE</a></li>
 </ul>
 </li>
+<li><span class="mail" onclick="EmailOpen();">Email</span></li>
 </ul> 
 </div>
 </div>
@@ -39,11 +40,11 @@
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="AddsToolbarandButtons();">Adds Toolbar and Buttons</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="AddsToolbarandButtons();">Adds Toolbar and Buttons</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -55,11 +56,11 @@ Adds Toolbar and Buttons добавляет панель инструменто�
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="LongLeftClick();">Long Left Click</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="LongLeftClick();">Long Left Click</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -71,11 +72,11 @@ Long Left Click открывает ссылки и закладки в ново�
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="AgentSheet();">Agent Sheet</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="AgentSheet();">Agent Sheet</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -87,11 +88,11 @@ Agent Sheet изменяет скроллбар и всплывающие под
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="ControlButtons();">Control Buttons</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="ControlButtons();">Control Buttons</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -104,11 +105,11 @@ Control Buttons добавляет кнопки (с дополнительным
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="eCleaner();">eCleaner</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="eCleaner();">eCleaner</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -120,11 +121,11 @@ eCleaner очищает настройки расширений оставлен
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="Rightclickclosetab();">Right click close tab</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="Rightclickclosetab();">Right click close tab</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -136,11 +137,11 @@ Right click close tab позволяет закрывать вкладки пр�
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="FlipCloseTab();">Flip Close Tab</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="FlipCloseTab();">Flip Close Tab</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -152,11 +153,11 @@ Flip Close Tab переключает фокус на последнюю пос�
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="Oldsearch();">Old search</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="Oldsearch();">Old search</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -169,11 +170,11 @@ Old Search возвращает старый способ поиска (в FF 43
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="QuickSearchBar();">Quick Search Bar</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="QuickSearchBar();">Quick Search Bar</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -186,11 +187,11 @@ Old Search возвращает старый способ поиска (в FF 43
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="ProgressIndicator();">Progress Indicator</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="ProgressIndicator();">Progress Indicator</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -214,11 +215,11 @@ Progress Indicator добавляет на панель инструментов
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="TabsFocus();">Tabs Focus</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="TabsFocus();">Tabs Focus</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -230,11 +231,11 @@ Tabs Focus переключает вкладки при наведении мы�
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="StyleCSS();">Style CSS</button>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="StyleCSS();">Style CSS</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">
@@ -249,11 +250,11 @@ Style CSS расширение для изменения стилей. Для с
 <br>
 <div>
 <div class="link">
-<button class="installbutton" onclick="UserAgentandotherbuttons();">User Agent and other buttons</button>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="UserAgentandotherbuttons();">User Agent and other buttons</span>  <span class="no-restart">Без перезапуска</span>  <img src="contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
-<button class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</button>
+<span class="commentbutton" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = 'Свернуть'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = 'Развернуть'; };">Развернуть</span>
 </div>
 <div>
 <div style="display:none;">

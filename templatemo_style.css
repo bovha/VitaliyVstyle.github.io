@@ -41,7 +41,7 @@ button:hover {background: #0095dd;}
 
 button:hover:active {background: #006b9d;}
 
-button.installbutton {
+span.installbutton {
 cursor:pointer;
 color:#00d9b5;
 text-decoration:underline;
@@ -54,7 +54,7 @@ outline:none;
 font-size: 14px;
 }
 
-button.commentbutton {
+span.commentbutton {
 cursor:pointer;
 color:#cccccc;
 text-decoration:underline;
@@ -66,14 +66,39 @@ outline:none;
 font-size: 14px;
 }
 
-.link button.installbutton:hover {
+span.mail {
+cursor:pointer;
+display: inline-block;
+padding: 8px 15px;
+margin-right: 0;
+color: #00d9b5;
+font: normal bold 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+border-radius: 0;
+background: transparent none no-repeat scroll top left;
+border-left: 1px solid #00b395;
+text-decoration:none;
+}
+
+.link span.installbutton:hover {
 color: #00ffd5;
 background:none;
 }
 
-.spoilers button.commentbutton:hover {
+.spoilers span.commentbutton:hover {
 color: #ffffff;
 background:none;
+}
+
+span.mail:hover {
+border-color: #00b395;
+position: relative;
+z-index: 1;
+background: #00b395 none repeat scroll bottom;
+color: #ffffff;
+}
+
+li:hover + li span.mail, li.select + li span.mail {
+border-color: #de8500;
 }
 
 a:link, a:visited {
@@ -82,6 +107,10 @@ color: #00d9b5;
 
 a:active, a:hover {
 color: #00ffd5;
+}
+
+.link span.installbutton:hover:active, a:active, span.mail:hover:active {
+opacity: 0.8;
 }
 
 code {
