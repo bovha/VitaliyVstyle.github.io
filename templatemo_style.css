@@ -117,6 +117,12 @@ code {
 color: #3399ff;
 }
 
+img:-moz-broken,
+img:-moz-user-disabled,
+img:-moz-loading {
+visibility: hidden !important;
+}
+
 .no-restart {
 vertical-align:middle;
 padding:1px 4px;
