@@ -32,7 +32,7 @@ font-weight:bold;
 font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif;
 background:#008acb;
 border:none;
-border-radius:2px;
+border-radius:0px;
 outline:none;
 padding:6px;
 }
@@ -123,7 +123,7 @@ padding:1px 4px;
 font-size:12px;
 color:#ffffff;
 background-color:#de8500;
-border-radius:2px;
+border-radius:0px;
 }
 
 #templatemo {
