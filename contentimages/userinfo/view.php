@@ -1,7 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>userinfo view</title>
+<title>Styles and extensions for SeaMonkey, Firefox, Pale Moon</title>
+<meta name="keywords" content="" >
+<meta name="description" content="" >
+<link rel="shortcut icon" href="AddsToolbarandButtons.png"  sizes="16x16" type="image/png">
+<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 <?php
