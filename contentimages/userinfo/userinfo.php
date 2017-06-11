@@ -10,7 +10,11 @@ $datetime=date("m/d/y G.i:s", time());
 $user=getenv("HTTP_USER_AGENT");
 $locale=getenv("HTTP_ACCEPT_LANGUAGE");
 $page=getenv("HTTP_REFERER");
-$fp=fopen("visitors.txt", "a+");
+$filename = "visitors.txt";
+if (filesize($filename)/1024 > 3072)
+    $fp=fopen($filename, "w+");
+else
+    $fp=fopen($filename, "a+");
 fputs($fp, "<b>страница:</b> $page <b>файл:</b> $string <b>ip real:</b> $ipreal <b>ip forwarded:</b> $ipfor <b>ip:</b> $ip <b>юзер агент:</b> $user <b>локаль:</b> $locale <b>дата:</b> $datetime <hr>\r\n");
 fclose($fp);
 ?>
