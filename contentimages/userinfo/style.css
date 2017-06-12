@@ -24,15 +24,25 @@ background-origin: border-box;
 background-clip: border-box;
 }
 
-hr {
-border-top: 1px solid #ff9900 !important;
-border-bottom: none !important;
-border-left: none !important;
-border-right: none !important;
-margin-top: 1px !important;
-margin-bottom: 1px !important;
+body > div {
+display: none !important;
 }
 
-b {
+td, th {
+padding: 1px 2px !important;
+}
+
+#templatemo {
+background: transparent url("container.png") repeat scroll left top;
+border-collapse: collapse;
+margin: 0 auto;
+}
+
+caption {
+text-align: left !important;
+padding-bottom: 2px;
+}
+
+th {
 color: #ff9900;
 }

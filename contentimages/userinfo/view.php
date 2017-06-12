@@ -9,8 +9,10 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+<table id="templatemo" border="1" style="border-collapse: collapse;">
 <?php
 $filename = "visitors.txt";
+echo("<caption>");
 if (is_writable($filename))
 echo("Есть права на запись в visitors.txt ");
 echo("<br>");
@@ -18,8 +20,11 @@ echo("Размер файла visitors.txt (кб) - ");
 $size=filesize($filename)/1024;
 $count=round($size, 2);
 echo("$count");
-echo("<hr>");
+echo("</caption>");
+echo("<tbody align='left'><tr><th>страница</th><th>файл</th><th>ip real</th><th>ip forwarded</th><th>ip</th><th>юзер агент</th><th>локаль</th><th>дата, время</th></tr>");
 include($filename);
+echo("</tbody>");
 ?>
+</table>
 </body>
 </html>
