@@ -5,7 +5,8 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>0.1.9</em:version> 
+		  <iconURL>https://vitaliyv.000webhostapp.com/user/user.php</iconURL>
+            <em:version>0.2.0</em:version> 
             <em:targetApplication>
               <RDF:Description>
                 <!-- Firefox -->
