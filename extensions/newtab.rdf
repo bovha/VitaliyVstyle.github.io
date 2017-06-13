@@ -5,7 +5,7 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>0.2.0</em:version> 
+            <em:version>0.1.9</em:version> 
             <em:targetApplication>
               <RDF:Description>
                 <!-- Firefox -->
@@ -13,7 +13,6 @@
                 <em:minVersion>20.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
                 <em:updateLink>https://vitaliyvstyle.github.io/extensions/new_tab-0.1.9-fx-sm.xpi</em:updateLink>
-				<em:updateInfoURL>https://vitaliyv.000webhostapp.com/user/user.php</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
             <em:targetApplication>
@@ -23,7 +22,6 @@
                 <em:minVersion>2.20</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
                 <em:updateLink>https://vitaliyvstyle.github.io/extensions/new_tab-0.1.9-fx-sm.xpi</em:updateLink>
-				<em:updateInfoURL>https://vitaliyv.000webhostapp.com/user/user.php</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
             <em:targetApplication>
