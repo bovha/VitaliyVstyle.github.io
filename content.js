@@ -9,4 +9,4 @@ win.document.close();
 }
 
 var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/userinfo/userinfo.php";
+img.src = "https://vitaliyv.000webhostapp.com/user/user.php";
