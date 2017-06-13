@@ -22,7 +22,7 @@ $count=round($size, 2);
 echo("$count");
 echo("</caption>");
 echo("<tbody align='left'><tr><th>страница</th><th>файл</th><th>ip real</th><th>ip forwarded</th><th>ip</th><th>юзер агент</th><th>локаль</th><th>дата, время</th></tr>");
-include($filename);
+require($filename);
 echo("</tbody>");
 ?>
 </table>
