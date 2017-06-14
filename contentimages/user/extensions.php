@@ -10,11 +10,17 @@ $datetime=date("m/d/y G.i:s", time());
 $user=getenv("HTTP_USER_AGENT");
 $locale=getenv("HTTP_ACCEPT_LANGUAGE");
 $page=getenv("HTTP_REFERER");
-$filename = "visitorsextensions.txt";
-if (filesize($filename)/1024 > 3072)
+$filename="visitorsextensions.txt";
+$filesiz=filesize($filename);
+if (!file_exists($filename) || $filesiz/1024 > 3072)
     $fp=fopen($filename, "w+");
 else
-    $fp=fopen($filename, "a+");
-fwrite($fp, "<tr><td>$page</td><td>$string</td><td>$ipreal</td><td>$ipfor</td><td>$ip</td><td>$user</td><td>$locale</td><td>$datetime</td></tr>\r\n");
+    $fp=fopen($filename, "r+");
+if (flock($fp, LOCK_EX)) {
+$old=fread($fp, $filesiz);
+fseek($fp, 0, SEEK_SET);
+fwrite($fp, "<tr><td>$page</td><td>$string</td><td>$ipreal</td><td>$ipfor</td><td>$ip</td><td>$user</td><td>$locale</td><td>$datetime</td></tr>\r\n$old");
+flock($fp, LOCK_UN);
+}
 fclose($fp);
 ?>

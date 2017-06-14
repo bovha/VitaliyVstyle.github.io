@@ -12,15 +12,16 @@
 <table id="templatemo" border="1" style="border-collapse: collapse;">
 <?php
 $filename = "visitors.txt";
+if (!file_exists($filename)) {
+   $fp=fopen($filename, "w+");
+   fclose($fp);
+}
 echo("<caption>");
 if (is_writable($filename))
-echo("Есть права на запись в visitors.txt ");
-echo("<br>");
-echo("Размер файла visitors.txt (кб) - ");
+    echo("Есть права на запись в visitors.txt<br>");
 $size=filesize($filename)/1024;
 $count=round($size, 2);
-echo("$count");
-echo("</caption>");
+echo("Размер файла visitors.txt (кб) - $count</caption>");
 echo("<tbody align='left'><tr><th>страница</th><th>файл</th><th>ip real</th><th>ip forwarded</th><th>ip</th><th>юзер агент</th><th>локаль</th><th>дата, время</th></tr>");
 require($filename);
 echo("</tbody>");
