@@ -11,19 +11,19 @@
 <body>
 <table id="templatemo" border="1" style="border-collapse: collapse;">
 <?php
-$filename = "visitorsextensions.txt";
-if (!file_exists($filename)) {
-   $fp=fopen($filename, "w+");
+$file = "visitorsextensions.txt";
+if (!file_exists($file)) {
+   $fp=fopen($file, "w+");
    fclose($fp);
 }
 echo("<caption>");
-if (is_writable($filename))
+if (is_writable($file))
     echo("Есть права на запись в visitorsextensions.txt<br>");
-$size=filesize($filename)/1024;
+$size=filesize($file)/1024;
 $count=round($size, 2);
 echo("Размер файла visitorsextensions.txt (кб) - $count</caption>");
 echo("<tbody align='left'><tr><th>страница</th><th>файл</th><th>ip real</th><th>ip forwarded</th><th>ip</th><th>юзер агент</th><th>локаль</th><th>дата, время</th></tr>");
-require($filename);
+require($file);
 echo("</tbody>");
 ?>
 </table>
