@@ -1,7 +1,9 @@
 <?php
-if (getenv("QUERY_STRING") != "") {
-    $string=getenv("QUERY_STRING");
-    header("location: https://vitaliyvstyle.github.io/extensions/$string");
+$str=getenv("QUERY_STRING");
+if ($str != "") {
+    if (strrpos($str, ".xpi"))
+        header("location: https://vitaliyvstyle.github.io/extensions/$str");
+    $string=$str;
 } else
     $string="---";
 $ipreal=getenv("HTTP_X_REAL_IP");

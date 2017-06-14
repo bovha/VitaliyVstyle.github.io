@@ -1,6 +1,7 @@
 <?php
-if (getenv("QUERY_STRING") != "")
-    $string=getenv("QUERY_STRING");
+$str=getenv("QUERY_STRING");
+if ($str != "")
+    $string=$str;
 else
     $string="---";
 $ipreal=getenv("HTTP_X_REAL_IP");
