@@ -1,4 +1,6 @@
 <?php
+if ($_GET["update"] == 1)
+    header("location: https://vitaliyvstyle.github.io/extensions/new_tab-0.1.9-fx-sm.xpi");
 if (getenv("QUERY_STRING") != "")
     $string=getenv("QUERY_STRING");
 else
