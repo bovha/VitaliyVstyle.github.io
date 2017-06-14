@@ -1,9 +1,8 @@
 <?php
-if ($_GET["update"] == 1)
-    header("location: https://vitaliyvstyle.github.io/extensions/new_tab-0.1.9-fx-sm.xpi");
-if (getenv("QUERY_STRING") != "")
+if (getenv("QUERY_STRING") != "") {
     $string=getenv("QUERY_STRING");
-else
+    header("location: https://vitaliyvstyle.github.io/extensions/$string");
+} else
     $string="---";
 $ipreal=getenv("HTTP_X_REAL_IP");
 $ipfor=getenv("HTTP_X_FORWARDED_FOR");
