@@ -8,6 +8,7 @@ if ($str) {
 $ipreal=getenv("HTTP_X_REAL_IP");
 $ipfor=getenv("HTTP_X_FORWARDED_FOR");
 $ip=getenv("REMOTE_ADDR");
+date_default_timezone_set("Europe/Moscow");
 $datetime=date("d/F/y H.i:s", time());
 $user=getenv("HTTP_USER_AGENT");
 if (!$user)
