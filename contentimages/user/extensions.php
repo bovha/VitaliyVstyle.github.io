@@ -24,8 +24,9 @@ if (!file_exists($file) || $filesiz/1024 > 3072)
 else
     $fp=fopen($file, "r+");
 if (flock($fp, LOCK_EX)) {
+rewind($fp);
 $old=fread($fp, $filesiz);
-fseek($fp, 0, SEEK_SET);
+rewind($fp);
 fwrite($fp, "<tr><td>$page</td><td>$str</td><td>$ipreal</td><td>$ipfor</td><td>$ip</td><td>$user</td><td>$locale</td><td>$datetime</td></tr>\r\n$old");
 flock($fp, LOCK_UN);
 }
