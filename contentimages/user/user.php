@@ -3,7 +3,7 @@ $str=getenv("QUERY_STRING");
 if ($str) {
     $str=urldecode($str);
     $str=str_replace("...", "</td><td>", $str);
-} else $str="---</td><td>---";
+} else $str="---</td><td>---</td><td>---";
 $ip=getenv("REMOTE_ADDR");
 date_default_timezone_set("Europe/Moscow");
 $datetime=date("d/F/y H.i:s", time());
