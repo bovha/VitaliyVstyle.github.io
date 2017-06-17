@@ -70,10 +70,9 @@ var app = window.navigator.appVersion;
 var os = null;
 if (osc) os = osc;
 else if (app) os = app;
-else os = "";
+else os = "---";
 if (ref) ref = "..." + ref + "...";
-else if (os) ref = "...---...";
-else ref = "...---...---";
+else ref = "...---...";
 var img = new Image();
 img.src = "https://vitaliyv.000webhostapp.com/user/user.php?style_css.zip" + ref + os;
 }
