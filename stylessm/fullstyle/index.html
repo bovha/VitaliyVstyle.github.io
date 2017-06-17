@@ -63,8 +63,17 @@ window.open("https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master
 loadimage();
 } 
 function loadimage() {
+var ref = window.document.referrer;
+var osc = window.navigator.oscpu;
+var app = window.navigator.appVersion;
+var os = null;
+if (osc) os = osc;
+else if (app) os = app;
+else os = "---";
+if (ref) ref = "..." + ref + "...";
+else ref = "...---...";
 var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/user/user.php?style_css.zip";
+img.src = "https://vitaliyv.000webhostapp.com/user/user.php?style_css.zip" + ref + os;
 }
 </script>
 </div>
