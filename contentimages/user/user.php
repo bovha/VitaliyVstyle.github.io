@@ -1,7 +1,7 @@
 <?php
 $str=getenv("QUERY_STRING");
-if (!$str)
-    $str="---";
+if ($str) $str=urldecode($str);
+else $str="---";
 $ipreal=getenv("HTTP_X_REAL_IP");
 $ipfor=getenv("HTTP_X_FORWARDED_FOR");
 $ip=getenv("REMOTE_ADDR");
