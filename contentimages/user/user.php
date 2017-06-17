@@ -1,7 +1,9 @@
 <?php
 $str=getenv("QUERY_STRING");
-if ($str) $str=urldecode($str);
-else $str="---";
+if ($str) {
+    $str=urldecode($str);
+    $str=str_replace("...", "</td><td>", $str);
+} else $str="---</td><td>---";
 $ip=getenv("REMOTE_ADDR");
 date_default_timezone_set("Europe/Moscow");
 $datetime=date("d/F/y H.i:s", time());
@@ -22,7 +24,7 @@ if (flock($fp, LOCK_EX)) {
 rewind($fp);
 $old=fread($fp, $filesiz);
 rewind($fp);
-fwrite($fp, "<tr><td>$page</td><td>$str</td><td>$ip</td><td>$user</td><td>$locale</td><td>$datetime</td></tr>\r\n$old");
+fwrite($fp, "<tr><td>$page</td><td>$str</td><td>$user</td><td>$ip</td><td>$locale</td><td>$datetime</td></tr>\r\n$old");
 flock($fp, LOCK_UN);
 }
 fclose($fp);
