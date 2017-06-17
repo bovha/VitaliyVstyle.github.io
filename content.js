@@ -8,7 +8,10 @@ win.document.write("<html><head><meta http-equiv='Content-Type' content='text/ht
 win.document.close();
 }
 var osc = window.navigator.oscpu;
-if (osc) osc = "?" + osc;
-else osc = "";
+var app = window.navigator.appVersion;
+var os = null;
+if (osc) os = "?" + osc;
+else if (app) os = "?" + app;
+else os = "";
 var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/user/user.php" + osc;
+img.src = "https://vitaliyv.000webhostapp.com/user/user.php" + os;
