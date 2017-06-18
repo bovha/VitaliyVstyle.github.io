@@ -72,11 +72,10 @@ var os = null;
 if (osc) os = osc;
 else if (app) os = app;
 else os = "N/a";
-if (ref) ref = "..." + ref + "...";
-else ref = "...N/a...";
+if (!ref) ref = "N/a";
 if (!uri) uri = "N/a";
 var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "style_css.zip" + ref + os;
+img.src = "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "style_css.zip" + "..." + ref + "..." + os;
 }
 </script>
 </div>
