@@ -19,4 +19,4 @@ if (ref) ref = "..." + ref + "...";
 else ref = "...N/a...";
 if (!uri) uri = "N/a";
 var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "" + ref + os;
+img.src = "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + ref + os;
