@@ -38,6 +38,10 @@ span {
 color: #FFFF00;
 }
 
+span:last-of-type {
+color: #F08080;
+}
+
 #templatemo {
 background: transparent url("container.png") repeat scroll left top;
 border-collapse: collapse;
