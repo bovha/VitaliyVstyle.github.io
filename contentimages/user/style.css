@@ -12,7 +12,7 @@ padding: 30px 0;
 margin: 0;
 box-sizing: border-box;
 font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif;
-font-size: 14px;
+font-size: 13px;
 color: #cccccc;
 background-color: #000000;
 background-repeat: no-repeat;
@@ -35,11 +35,11 @@ word-break: break-all;
 }
 
 span {
-color: #FFFF00;
+color: #ffd700;
 }
 
 span:last-of-type {
-color: #F08080;
+color: #00e0ca;
 }
 
 #templatemo {
@@ -56,4 +56,13 @@ padding-bottom: 2px;
 
 th {
 color: #ff9900;
+}
+
+hr {
+margin: 0 !important;
+padding: 0 !important;
+border-left: none !important;
+border-right: none !important;
+border-bottom: none !important;
+border-top: 1px solid rgba(255,255,255,0.4) !important;
 }

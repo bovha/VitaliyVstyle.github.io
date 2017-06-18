@@ -22,7 +22,7 @@ if (flock($fp, LOCK_EX)) {
 rewind($fp);
 $old=fread($fp, $filesiz);
 rewind($fp);
-fwrite($fp, "<tr><td><span>$datetime</span><br>$ip <span>$locale</span><br>$user</td><td>$str</td></tr>\r\n$old");
+fwrite($fp, "<tr><td><span>$datetime</span><hr>$ip <span>$locale</span><hr>$user</td><td>$str</td></tr>\r\n$old");
 flock($fp, LOCK_UN);
 }
 fclose($fp);
