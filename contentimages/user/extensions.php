@@ -12,9 +12,6 @@ $user=getenv("HTTP_USER_AGENT");
 if (!$user)
     $user="N/a";
 $locale=getenv("HTTP_ACCEPT_LANGUAGE");
-$page=getenv("HTTP_REFERER");
-if (!$page)
-    $page="N/a";
 $file="visitorsextensions.txt";
 $filesiz=filesize($file);
 if (!file_exists($file) || $filesiz/1024 > 3072)
@@ -25,7 +22,7 @@ if (flock($fp, LOCK_EX)) {
 rewind($fp);
 $old=fread($fp, $filesiz);
 rewind($fp);
-fwrite($fp, "<tr><td><span>$datetime</span> $ip<br>$page <span>$locale</span><br>$user</td><td>$str</td></tr>\r\n$old");
+fwrite($fp, "<tr><td><span>$datetime</span><br>$ip <span>$locale</span><br>$user</td><td>$str</td></tr>\r\n$old");
 flock($fp, LOCK_UN);
 }
 fclose($fp);
