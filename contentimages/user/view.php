@@ -22,7 +22,7 @@ if (is_writable($file))
 $size=filesize($file)/1024;
 $count=round($size, 2);
 echo("Размер файла visitors.txt (кб) - $count</caption>");
-echo("<tbody align='left'><tr><th>дата время | ip<br>страница | локаль<br>юзер агент</th><th>файл<br>реферер<br>ос</th></tr>");
+echo("<tbody align='left'><tr><th>дата время ip<br>страница локаль<br>юзер-агент</th><th>файл<br>реферер<br>ос</th></tr>");
 require($file);
 echo("</tbody>");
 ?>

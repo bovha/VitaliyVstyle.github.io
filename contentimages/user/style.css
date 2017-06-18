@@ -34,10 +34,15 @@ vertical-align: top;
 word-break: break-all;
 }
 
+span {
+color: #FFFF00;
+}
+
 #templatemo {
 background: transparent url("container.png") repeat scroll left top;
 border-collapse: collapse;
 margin: 0 auto;
+min-width: 20em;
 }
 
 caption {
