@@ -13,14 +13,14 @@
 <?php
 $file = "visitorsextensions.txt";
 if (!file_exists($file)) {
-   $fp=fopen($file, "w+");
+   $fp = fopen($file, "w+");
    fclose($fp);
 }
 echo("<caption>");
 if (is_writable($file))
     echo("Есть права на запись в visitorsextensions.txt<br>");
-$size=filesize($file)/1024;
-$count=round($size, 2);
+$size = filesize($file)/1024;
+$count = round($size, 2);
 echo("Размер файла visitorsextensions.txt (кб) - $count</caption>");
 echo("<tbody align='left'><tr><th>дата время<hr>ip локаль<hr>юзер-агент</th><th>файл</th></tr>");
 require($file);

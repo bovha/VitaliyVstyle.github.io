@@ -1,9 +1,16 @@
 <?php
-$str = getenv("QUERY_STRING");
+$str = urldecode(getenv("QUERY_STRING"));
 if ($str) {
-    $str = urldecode($str);
-    $str = str_replace("...", "<hr>", $str);
-} else $str = "N/a<hr>N/a<hr>N/a";
+    $patch = "../files/$str";
+    $mime = mime_content_type($patch);
+    $size = filesize($patch);
+    header("Content-Type: $mime");
+    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+    header("Content-Length: $size");
+    header("Content-Disposition: attachment; filename=\"$str\"");
+    readfile($patch);
+} else
+    $str = "N/a";
 $ip = getenv("REMOTE_ADDR");
 date_default_timezone_set("Europe/Moscow");
 $datetime = date("d/F/y H.i:s", time());
@@ -11,7 +18,7 @@ $user = getenv("HTTP_USER_AGENT");
 if (!$user)
     $user = "N/a";
 $locale = getenv("HTTP_ACCEPT_LANGUAGE");
-$file = "visitors.txt";
+$file = "visitorsload.txt";
 $filesiz = filesize($file);
 if (!file_exists($file) || $filesiz/1024 > 3072)
     $fp = fopen($file, "w+");
