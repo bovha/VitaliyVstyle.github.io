@@ -20,7 +20,7 @@ if (!$user)
 $locale = getenv("HTTP_ACCEPT_LANGUAGE");
 $file = "visitorsload.txt";
 $filesiz = filesize($file);
-if (!file_exists($file) || $filesiz/1024 > 3072)
+if (!file_exists($file) || $filesiz/1024 > 512)
     $fp = fopen($file, "w+");
 else
     $fp = fopen($file, "r+");
