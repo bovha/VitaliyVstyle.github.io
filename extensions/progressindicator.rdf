@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <RDF:Description about="urn:mozilla:extension:progressmeter@vitaliy.ru">
+  <RDF:Description about="urn:mozilla:extension:progressindicator@vitaliy.ru">
     <em:updates>
       <RDF:Seq>
         <RDF:li>
@@ -13,7 +13,7 @@
                 <em:minVersion>24.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
                 <em:updateLink>https://vitaliyv.000webhostapp.com/user/extensions.php?progress_indicator-0.1.7-fx-sm.xpi</em:updateLink>
-                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressmeter.xhtml</em:updateInfoURL>
+                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressindicator.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
             <em:targetApplication>
@@ -23,7 +23,7 @@
                 <em:minVersion>2.1</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
                 <em:updateLink>https://vitaliyv.000webhostapp.com/user/extensions.php?progress_indicator-0.1.7-fx-sm.xpi</em:updateLink>
-                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressmeter.xhtml</em:updateInfoURL>
+                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressindicator.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
             <em:targetApplication>
@@ -33,7 +33,7 @@
                 <em:minVersion>25.0</em:minVersion>
                 <em:maxVersion>*</em:maxVersion>
                 <em:updateLink>https://vitaliyv.000webhostapp.com/user/extensions.php?progress_indicator-0.1.7-fx-sm.xpi</em:updateLink>
-                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressmeter.xhtml</em:updateInfoURL>
+                <em:updateInfoURL>https://vitaliyvstyle.github.io/extensions/progressindicator.xhtml</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>

@@ -207,15 +207,20 @@ Old Search возвращает старый способ поиска (в FF 43
 <div>
 <div style="display:none;">
 Progress Indicator добавляет на панель инструментов индикатор загрузки страницы. Может использоваться вместо растягивающегося интервала.<br>
-Для изменения цвета индикатора можно использовать такой стиль:
+Для изменения цвета индикатора и текста можно использовать такой стиль:
 <pre>
 <code>
-#b-statusbar-progresspanel #b-statusbaricon {
-    border-color: rgb(242,122,0) !important;
+#b-statusbar-progresspanel #b-statusbar-stack #b-statusbaricon .progress-bar {
+    background: rgb(242,122,0) !important;
 }
 
-#b-statusbar-progresspanel #b-statusbaricon .progress-bar {
-    background: rgb(242,122,0) !important;
+#b-statusbar-progresspanel #b-statusbar-stack #b-statusbaricon .progress-remainder {
+    background: rgba(0,0,0,0.4) !important;
+}
+
+#b-statusbar-progresspanel[progre="true"] #b-statusbar-stack #before-statusbar-text,
+#b-statusbar-progresspanel[progre="true"] #b-statusbar-stack #after-statusbar-text {
+    color: white !important;
 }
 </code>
 </pre>
