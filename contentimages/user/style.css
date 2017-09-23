@@ -34,6 +34,10 @@ vertical-align: top;
 word-break: break-all;
 }
 
+td:last-of-type {
+min-width: 15%;
+}
+
 span {
 color: #ffd700;
 }
