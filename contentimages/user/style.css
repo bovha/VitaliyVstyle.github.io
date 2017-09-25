@@ -31,11 +31,6 @@ display: none !important;
 td, th {
 padding: 1px 2px !important;
 vertical-align: top;
-word-break: break-all;
-}
-
-td:last-of-type {
-min-width: 15%;
 }
 
 span {
