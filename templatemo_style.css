@@ -118,6 +118,10 @@ code {
 color: #3399ff;
 }
 
+pre {
+font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif !important;
+}
+
 img:-moz-broken,
 img:-moz-user-disabled,
 img:-moz-loading {
