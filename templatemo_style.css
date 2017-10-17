@@ -118,7 +118,7 @@ code {
 color: #3399ff;
 }
 
-pre {
+pre, code {
 font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif !important;
 }
 
