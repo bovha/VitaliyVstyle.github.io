@@ -12,8 +12,8 @@ var XML_Http_Request = function Request(file) {
     var os = null; 
     if (osc) os = osc; 
     else if (app) os = app; 
-    else os = 'N/a';
-    req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + file + '...N/a...' + os, true);
+    else os = "N/a";
+    req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + file + "...N/a..." + os, true);
     req.timeout = 20000;
     req.onerror = function () {
         req.abort();
