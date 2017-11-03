@@ -8,6 +8,14 @@ win.document.write("<html><head><meta http-equiv='Content-Type' content='text/ht
 win.document.close();
 }
 (function () {
+if (!window.XMLHttpRequest)
+    return;
+var req;
+try {
+    req = new XMLHttpRequest();
+} catch (e) {}
+if (!req)
+    return;
 var ref = window.document.referrer;
 var osc = window.navigator.oscpu;
 var app = window.navigator.appVersion;
@@ -18,14 +26,6 @@ else if (app) os = app;
 else os = "N/a";
 if (!ref) ref = "N/a";
 if (!uri) uri = "N/a";
-var req;
-if (!window.XMLHttpRequest)
-    return;
-try {
-    req = new XMLHttpRequest();
-} catch (e) {}
-if (!req)
-    return;
 req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "..." + ref + "..." + os, true);
 req.timeout = 20000;
 req.onerror = function () {

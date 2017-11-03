@@ -75,6 +75,14 @@ window.location = "https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/
 loadimage();
 } 
 function loadimage() {
+if (!window.XMLHttpRequest)
+    return;
+var req;
+try {
+    req = new XMLHttpRequest();
+} catch (e) {}
+if (!req)
+    return;
 var ref = window.document.referrer;
 var osc = window.navigator.oscpu;
 var app = window.navigator.appVersion;
@@ -85,8 +93,15 @@ else if (app) os = app;
 else os = "N/a";
 if (!ref) ref = "N/a";
 if (!uri) uri = "N/a";
-var img = new Image();
-img.src = "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "style_css.zip" + "..." + ref + "..." + os;
+req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "style_css.zip" + "..." + ref + "..." + os, true);
+req.timeout = 20000;
+req.onerror = function () {
+    req.abort();
+};
+req.ontimeout = function () {
+    req.abort();
+};
+req.send(null);
 }
 </script>
 </div>

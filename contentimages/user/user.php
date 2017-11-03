@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: https://vitaliyvstyle.github.io");
 $str = getenv("QUERY_STRING");
 if ($str) {
     $str = urldecode($str);
