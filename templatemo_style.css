@@ -137,6 +137,16 @@ background-color:#de8500;
 border-radius:0px;
 }
 
+.warning {
+background: #FFE7E8 none repeat scroll 0% 0%;
+border-left: 5px solid #E66465;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+color: #FFE7E8;
+text-align:left;
+}
+
 #templatemo {
 width: 1100px;
 margin: 0 auto;
