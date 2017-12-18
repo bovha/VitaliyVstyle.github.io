@@ -78,6 +78,26 @@ background: transparent none no-repeat scroll top left;
 border-left: 1px solid #00b395;
 text-decoration:none;
 outline: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+li.more {
+direction: rtl;
+}
+
+li.more > * {
+direction: ltr;
+}
+
+li.more > a {
+cursor: default !important;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 .link span.installbutton:hover {
@@ -200,6 +220,10 @@ background: transparent none no-repeat scroll top left;
 border-left: 1px solid #de8500;
 text-decoration:none;
 outline: none;
+}
+
+#templatemo_menu_section li.more .menup {
+margin-right: -1px;
 }
 
 strong {
