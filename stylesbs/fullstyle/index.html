@@ -43,6 +43,9 @@
 <strong>FULL STYLE</strong><br>
 <strong>Update:</strong> 26-01-2018<br>
 <br>
+<strong>Автор:</strong> Vitaliy V.<br>
+<strong>Браузер:</strong> Basilisk<br>
+<strong>ОС:</strong> Windows, Linux<br>
 <strong>Описание:</strong> Стиль для моего расширения <a href="/extensions/" target="_blank">Style CSS</a><br>
 Содержимое архива распаковать в папку профиля Basilisk.<br>
 Использовать данный стиль с темой по умолчанию или с лёгкими темами, если тема тёмная со светлым текстом (и также тема Компактная тёмная)<br>
@@ -59,24 +62,31 @@
 Можно установить расширение <a href="/extensions/" target="_blank">Control Buttons</a> для замены системных кнопок управления окном,<br>
 а также чтобы убрать заголовок окна в Linux.<br>
 <br>
-<strong>Автор:</strong> Vitaliy V.<br>
-<strong>Браузер:</strong> Basilisk<br>
-<strong>ОС:</strong> Windows, Linux<br>
-<br>
 <span id="image01"></span><br>
-<img src="01.png" alt="" style="height:751px;border:none;"><br>
+<div class="containerimage">
+<img src="/stylesbs/fullstyle/01.png" alt="" style="height:751px;border:none;">
+</div>
 <br>
 <span id="image02"></span><br>
-<img src="02.png" alt="" style="height:751px;border:none;"><br>
+<div class="containerimage">
+<img src="/stylesbs/fullstyle/02.png" alt="" style="height:751px;border:none;">
+</div>
 <br>
 <span id="image03">Боковая панель (если включена) появляется при наведении на левый край (2px в развёрнутом окне и 5px в обычном).</span><br>
-<img src="03.png" alt="" style="height:751px;border:none;"><br>
+<div class="containerimage">
+<img src="/stylesbs/fullstyle/03.png" alt="" style="height:751px;border:none;">
+</div>
 <br>
 <span id="image04"></span><br>
-<img src="04.png" alt="" style="height:751px;border:none;"><br>
+<div class="containerimage">
+<img src="/stylesbs/fullstyle/04.png" alt="" style="height:751px;border:none;">
+</div>
 <br>
-<span id="image05">Многострочная панель вкладок, закреплённые вкладки всегда видимы независимо от позиции прокрутки вкладок.</span><br>
-<img src="05.png" alt="" style="height:751px;border:none;"><br>
+<span id="image05">Многострочная панель вкладок.</span><br>
+<span class="playtext">Нажмите на изображение чтобы посмотреть в действии</span><br>
+<div class="containerimage" title="Нажмите здесь для запуска / остановки APNG анимации">
+<img src="/stylesbs/fullstyle/05.png" alt="" onclick="onclickanimationimage.loadanimationimage(this, '05', 'apng', '751');" style="height:751px;border:none;">
+</div>
 </div><br>
 <br>
 <div class="link">
@@ -84,6 +94,48 @@
 </div>
 </div>
 <script type="text/javascript">
+var imageloaded = new Image;
+imageloaded.className = "loadingimage";
+imageloaded.setAttribute("alt", "");
+imageloaded.setAttribute("style", "position:absolute;width:32px;height:32px;border:none;left:50%;top:50%;margin-left:-16px;margin-top:-16px;");
+imageloaded.src = "/contentimages/loading.png"
+var onclickanimationimage = {
+    loaded: false,
+    timer: null,
+    loadanimationimage: function (img, name, png, height) {
+        if (this.loaded) return;
+        this.loaded = true;
+        var parent = img.parentNode;
+        parent.className = "containerimage containerloading";
+        parent.appendChild(imageloaded);
+        var image = new Image;
+        image.setAttribute("alt", "");
+        var aname = name;
+        if (png === "apng") {
+            png = "png";
+            aname = name + "a";
+        } else
+            png = "apng";
+        image.setAttribute("onclick", "onclickanimationimage.loadanimationimage(this, '" + name + "', '" + png + "', '" + height + "')");
+        image.setAttribute("style", "height:" + height + "px;border:none;");
+        image.src = "/stylesbs/fullstyle/" + aname + ".png";
+        image.onload = function () {
+            clearTimeout(onclickanimationimage.timer);
+            parent.removeChild(img);
+            parent.removeChild(imageloaded);
+            parent.className = "containerimage";
+            parent.appendChild(image);
+            onclickanimationimage.loaded = false;
+        };
+        this.timer = setTimeout(function () {
+            parent.removeChild(imageloaded);
+            parent.className = "containerimage";
+            image.onload = null;
+            image = null;
+            onclickanimationimage.loaded = false;
+        }, 300000);
+    }
+};
 function download() {
 window.open("https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/stylesbs/fullstyle/style_css.zip", "_self");
 loadimage();

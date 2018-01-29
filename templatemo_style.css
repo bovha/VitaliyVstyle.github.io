@@ -166,6 +166,13 @@ color: #ff876f;
 text-align:left;
 }
 
+.playtext {
+color: #00d9b5;
+text-decoration-line: overline;
+text-decoration-style: solid;
+text-decoration-color: #00d9b5;
+}
+
 #templatemo {
 width: 1100px;
 margin: 0 auto;
