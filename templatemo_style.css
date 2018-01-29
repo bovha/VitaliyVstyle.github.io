@@ -280,3 +280,16 @@ display: block;
 #templatemo_menu_section ul li:first-child a {
 border-left: none;
 }
+
+.containerimage {
+position: relative;
+font-size: 0;
+}
+
+.containerloading {
+background: black;
+}
+
+.containerloading img[onclick] {
+opacity: 0.4;
+}
