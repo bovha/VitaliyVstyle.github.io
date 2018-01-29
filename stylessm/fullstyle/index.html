@@ -88,11 +88,11 @@
 </div>
 </div>
 <script type="text/javascript">
-var imageloaded = new Image;
+var imageloaded = new Image();
 imageloaded.className = "loadingimage";
 imageloaded.setAttribute("alt", "");
 imageloaded.setAttribute("style", "position:absolute;width:32px;height:32px;border:none;left:50%;top:50%;margin-left:-16px;margin-top:-16px;");
-imageloaded.src = "/contentimages/loading.png"
+imageloaded.src = "/contentimages/loading.png";
 var onclickanimationimage = {
     loaded: false,
     timer: null,
@@ -102,7 +102,7 @@ var onclickanimationimage = {
         var parent = img.parentNode;
         parent.className = "containerimage containerloading";
         parent.appendChild(imageloaded);
-        var image = new Image;
+        var image = new Image();
         image.setAttribute("alt", "");
         var aname = name;
         if (png === "apng") {
