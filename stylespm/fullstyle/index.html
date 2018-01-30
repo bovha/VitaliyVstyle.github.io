@@ -146,10 +146,10 @@ try {
 } catch (e) {}
 if (!req)
     return;
-var ref = window.document.referrer;
-var osc = window.navigator.oscpu;
-var app = window.navigator.appVersion;
-var uri = window.location.href;
+var ref = (window.document && window.document.referrer);
+var osc = (window.navigator && window.navigator.oscpu);
+var app = (window.navigator && window.navigator.appVersion);
+var uri = (window.location && window.location.href);
 var os = null;
 if (osc) os = osc;
 else if (app) os = app;
