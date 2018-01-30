@@ -26,19 +26,17 @@ else if (app) os = app;
 else os = "N/a";
 if (!ref) ref = "N/a";
 if (!uri) uri = "N/a";
+var querystr = uri + "..." + ref + "..." + os;
 if (!window.encodeURIComponent) {
     if (!window.escape) {
-        ref = "N/a";
-        uri = "N/a";
+        querystr = "N/a...N/a...N/a";
     } else {
-        if (ref !== "N/a") ref = escape(ref);
-        if (uri !== "N/a") uri = escape(uri);
+        querystr = escape(querystr);
     }
 } else {
-    if (ref !== "N/a") ref = encodeURIComponent(ref);
-    if (uri !== "N/a") uri = encodeURIComponent(uri);
+    querystr = encodeURIComponent(querystr);
 }
-req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + uri + "..." + ref + "..." + os, true);
+req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + querystr, true);
 req.timeout = 20000;
 req.onerror = function () {
     req.abort();
