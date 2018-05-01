@@ -10,8 +10,10 @@ if ($str) {
         header("Content-Length: $size");
         header("Content-Disposition: attachment; filename=\"$str\"");
         readfile($patch);
-    } else
+    } else {
         header("Location: https://vitaliyvstyle.github.io/404.html");
+        $str = "not found: ".$str;
+    }
 } else
     $str = "N/a";
 $ip = getenv("REMOTE_ADDR");
