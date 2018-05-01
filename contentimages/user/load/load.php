@@ -2,13 +2,16 @@
 $str = urldecode(getenv("QUERY_STRING"));
 if ($str) {
     $patch = "../files/$str";
-    $mime = mime_content_type($patch);
-    $size = filesize($patch);
-    header("Content-Type: $mime");
-    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Content-Length: $size");
-    header("Content-Disposition: attachment; filename=\"$str\"");
-    readfile($patch);
+    if (file_exists($patch)) {
+        $mime = mime_content_type($patch);
+        $size = filesize($patch);
+        header("Content-Type: $mime");
+        header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+        header("Content-Length: $size");
+        header("Content-Disposition: attachment; filename=\"$str\"");
+        readfile($patch);
+    } else
+        header("Location: https://vitaliyvstyle.github.io/404.html");
 } else
     $str = "N/a";
 $ip = getenv("REMOTE_ADDR");
