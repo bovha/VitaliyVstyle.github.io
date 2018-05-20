@@ -53,7 +53,7 @@
 </div>
 <div style="display:inline-block;text-align:center;min-width:84px;width:7em;padding-top:4px;">
 <img src="/contentimages/Firefox.svg" alt="" style="width:70px;height:70px;border:none;">
-<p style="padding-top:8px">Firefox < 57</p>
+<p style="padding-top:8px">Firefox &lt; 57</p>
 </div>
 </div>
 <div class="warning">
@@ -448,7 +448,7 @@ Tabs Focus переключает вкладки при наведении мы�
 <br>
 <div>
 <div class="link">
-<span class="installbutton" onclick="StyleCSS();">Style CSS</span>  <img src="/contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/basilisk.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
+<span class="installbutton" onclick="StyleCSS();">Style CSS</span>  <span class="no-restart">Без перезапуска</span>  <img src="/contentimages/palemoon.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/basilisk.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/seamonkey.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">  <img src="/contentimages/firefox.png" alt="" style="vertical-align:middle;width:24px;height:24px;border:none;">
 </div>
 <div class="spoilers">
 <div>
@@ -463,15 +463,18 @@ Style CSS расширение для изменения стилей. Для с
 или <code>#main-window[stylecssurl^="префикс URL адреса"]</code><br>
 <br>
 <pre>    кнопка: "Стиль CSS"
-    тултип: "ЛКМ: Отключить/Применить стили"
-                "Shift + ЛКМ: Обновить стили"
-                "СКМ: Открыть каталог"
+    тултип: "ЛКМ: Применить стили"
+                "СКМ: Открыть stylecss_author"
                 "ПКМ: Открыть stylecss"
-                "Shift + ПКМ: Открыть stylecss_author"
+    кнопка: ""
+    тултип: "ЛКМ: Открыть меню"
+                "СКМ: Открыть каталог"
+                "ПКМ: Обновить стили"
+    пункт меню: "Применить стили"
     пункт меню: "Обновить стили"
-    пункт меню: "Выкл/Применить stylecss"
-    пункт меню: "Выкл/Применить stylecss_author"
-    пункт меню: "Применить/Откл другие стили"
+    пункт меню: "Применить stylecss"
+    пункт меню: "Применить stylecss_author"
+    пункт меню: "Применить другие стили"
     пункт меню: "Открыть каталог"
     пункт меню: "Открыть stylecss"
     пункт меню: "Открыть stylecss_author"
