@@ -27,7 +27,7 @@ if not defined sFolderName (
 
 set filename=mp4video
 set /p filename=Введите название файла (без расширения):
-
+set filename=%filename: =%
 ffmpeg -i "%~1" -c:a copy -c:v copy -f mp4 "%sFolderName%\%filename%.mp4"
 goto ffmpegpromt
 
