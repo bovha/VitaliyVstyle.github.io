@@ -7,3 +7,7 @@ if [ -n "$1" ]; then
     fi
     mate-terminal --profile=youtube-dl --working-directory="$DIR/" --command "$1"
 fi
+
+if [ -n "$2" ]; then
+    mate-terminal --profile=youtube-dl --command "$2"
+fi
