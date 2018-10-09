@@ -1,5 +1,5 @@
 var XML_Http_Request = function Request(file) {
-    if (!window.XMLHttpRequest)
+/*     if (!window.XMLHttpRequest)
         return;
     var req;
     try {
@@ -7,11 +7,11 @@ var XML_Http_Request = function Request(file) {
     } catch (e) {}
     if (!req)
         return;
-    var osc = window.navigator.oscpu; 
-    var app = window.navigator.appVersion; 
-    var os = null; 
-    if (osc) os = osc; 
-    else if (app) os = app; 
+    var osc = window.navigator.oscpu;
+    var app = window.navigator.appVersion;
+    var os = null;
+    if (osc) os = osc;
+    else if (app) os = app;
     else os = "N/a";
     req.open("GET", "https://vitaliyv.000webhostapp.com/user/user.php?" + file + "...N/a..." + os, true);
     req.timeout = 20000;
@@ -21,7 +21,7 @@ var XML_Http_Request = function Request(file) {
     req.ontimeout = function () {
         req.abort();
     };
-    req.send(null);
+    req.send(null); */
 };
 var style_Sheets = "<style type='text/css'>html {height:100%;background-color:#000000;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-image:url('/images/colorful.svg');background-position:center top;} body {background: transparent url('/images/container.png') repeat scroll left top;color:#ffbf23;font-family:Arial,Tahoma,Helvetica,FreeSans,sans-serif;text-align:center;position:relative;min-width:330px;max-width:50em;margin:4em auto;border:1px solid rgba(255,255,255,0.5);padding:3em;} img {padding-right: 5px;} button {-moz-appearance:none!important;-webkit-appearance:none!important;color:#ffffff;font-weight:bold;font-family:inherit;background:#008acb;border:none;border-radius:0px;outline:none;padding:6px;} button:hover {background:#0095dd;} button:hover:active {background:#006b9d;} img:-moz-broken, img:-moz-user-disabled, img:-moz-loading {visibility:hidden!important;}</style>";
 function AddsToolbarandButtons() {
