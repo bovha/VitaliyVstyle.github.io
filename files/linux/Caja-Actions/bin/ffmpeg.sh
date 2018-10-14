@@ -9,7 +9,7 @@ if [ -n "$1" ]; then
     if [ "$?" -eq 1 ]; then
         exit 1
     fi
-    NAME=$(echo $NAME)
+    NAME=$(echo "$NAME" | tr -d "[:space:][:punct:][:cntrl:]")
     if [ "$NAME" = "" ]; then
         NAME="mp4video"
     fi
