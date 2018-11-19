@@ -1,0 +1,14 @@
+{
+    "addons": {
+        "_001_newtabpage@vitaliy.ru": {
+            "updates": [
+                { "version": "2018.11.19", "update_link": "https://vitaliyvstyle.github.io/webextensions/addon-0.1.xpi" }
+            ]
+        },
+        "_002_vitaliyvstyle-theme@vitaliy.ru": {
+            "updates": [
+                { "version": "2018.11.16", "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme.xpi" }
+            ]
+        }
+    }
+}
