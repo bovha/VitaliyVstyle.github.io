@@ -7,7 +7,7 @@
         },
         "_002_vitaliyvstyle-theme@vitaliy.ru": {
             "updates": [
-                { "version": "2018.11.16", "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme.xpi" }
+                { "version": "2018.11.20", "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme.xpi" }
             ]
         }
     }
