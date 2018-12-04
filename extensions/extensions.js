@@ -45,13 +45,6 @@ win.document.writeln("<!DOCTYPE html>");
 win.document.write("<html><head><title>Load Favicons Remove Duplicates</title><link rel='shortcut icon' href='/contentimages/LoadFaviconsRemoveDuplicates.png'  sizes='16x16' type='image/png'>" + style_Sheets + "</head><body><div><img src='/contentimages/LoadFaviconsRemoveDuplicates.png' border='0'><strong>Load Favicons Remove Duplicates</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Load Favicons Remove Duplicates': {URL: 'https://vitaliyvstyle.github.io/extensions/load_favicons_remove_duplicates-1.0.2-fx-sm.xpi', IconURL: '/contentimages/LoadFaviconsRemoveDuplicates.png'}}); Request('load_favicons_remove_duplicates-1.0.2-fx-sm.xpi');} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/load_favicons_remove_duplicates-1.0.2-fx-sm.xpi', '_self'); Request('load_favicons_remove_duplicates-1.0.2-fx-sm.xpi');} " + XML_Http_Request + "</" + "script></body></html>");
 win.document.close();
 }
-function AgentSheet() {
-var win = window.open("", "_blank");
-win.document.open();
-win.document.writeln("<!DOCTYPE html>");
-win.document.write("<html><head><title>Agent Sheet</title><link rel='shortcut icon' href='/contentimages/AgentSheet.png'  sizes='16x16' type='image/png'>" + style_Sheets + "</head><body><div><img src='/contentimages/AgentSheet.png' border='0'><strong>Agent Sheet</strong></div><br><div><button onclick='install();'>Установить</button>  <button onclick='download()'>Загрузить</button></div><" + "script type='text/javascript'>function install() {InstallTrigger.install({'Agent Sheet': {URL: 'https://vitaliyvstyle.github.io/extensions/agent_sheet-1.9.1-fx-sm.xpi', IconURL: '/contentimages/AgentSheet.png'}}); Request('agent_sheet-1.9.1-fx-sm.xpi');} function download() {window.open('https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/raw/master/extensions/agent_sheet-1.9.1-fx-sm.xpi', '_self'); Request('agent_sheet-1.9.1-fx-sm.xpi');} " + XML_Http_Request + "</" + "script></body></html>");
-win.document.close();
-}
 function ControlButtons() {
 var win = window.open("", "_blank");
 win.document.open();
