@@ -19,6 +19,11 @@
             "updates": [
                 { "version": "2018.12.14", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2018.12.14.xpi" }
             ]
+        },
+        "right_click_close_tab@vitaliy.ru": {
+            "updates": [
+                { "version": "2018.12.14", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/right_click_close_tab.2018.12.14.xpi" }
+            ]
         }
     }
 }
