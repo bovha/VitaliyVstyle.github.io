@@ -24,6 +24,11 @@
             "updates": [
                 { "version": "2018.12.17", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/right_click_close_tab.2018.12.17.xpi" }
             ]
+        },
+        "tabs_focus@vitaliy.ru": {
+            "updates": [
+                { "version": "2018.12.17", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/tabs_focus.2018.12.17.xpi" }
+            ]
         }
     }
 }
