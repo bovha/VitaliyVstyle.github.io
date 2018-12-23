@@ -11,9 +11,11 @@ if not exist youtube-dl.exe (
 )
 
 if "%~1" == "" (
-    echo Версия youtube-dl:
-    youtube-dl --version
-    goto youtubepromt
+    if "%~2" == "" (
+        echo Версия youtube-dl:
+        youtube-dl --version
+        goto youtubepromt
+    )
 )
 
 for /f "usebackq delims=" %%i in (
@@ -26,8 +28,13 @@ if not defined sFolderName (
     goto youtubepromt
 )
 
-youtube-dl -o "%sFolderName%\%%(title)s.%%(ext)s" --restrict-filenames "%~1"
-goto youtubepromt
+if "%~2" == "" (
+    youtube-dl -o "%sFolderName%\%%(title)s.%%(ext)s" "%~1"
+    goto youtubepromt
+) else (
+    youtube-dl -o "%sFolderName%\%%(title)s.%%(ext)s" %~1 "%~2"
+    goto youtubepromt
+)
 
 :youtubepromt
 echo.
