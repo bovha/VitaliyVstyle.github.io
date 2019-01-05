@@ -1,1 +1,0 @@
-https://vitaliyvstyle.github.io/
