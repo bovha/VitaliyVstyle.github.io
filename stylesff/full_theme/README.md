@@ -10,4 +10,8 @@
 
 в user_chrome_files/user_style.css
 
+Браузер: Firefox 65 +
+
+ОС: Linux, Windows
+
 <img src="https://raw.githubusercontent.com/VitaliyVstyle/VitaliyVstyle.github.io/master/stylesff/full_theme/image_01.png"/>
