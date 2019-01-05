@@ -5,4 +5,4 @@
 @import url("./custom_styles/common_dark.css");
 в user_chrome_files/user_style.css
 
-<img src="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/blob/master/stylesff/full_theme/image_01.png"/>
+<img src="https://raw.githubusercontent.com/VitaliyVstyle/VitaliyVstyle.github.io/master/stylesff/full_theme/image_01.png"/>
