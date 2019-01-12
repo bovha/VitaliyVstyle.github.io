@@ -2,7 +2,7 @@
     "addons": {
         "_001_newtabpage@vitaliy.ru": {
             "updates": [
-                { "version": "2019.1.11.20", "update_link": "https://vitaliyvstyle.github.io/webextensions/new_tab_page-2019.1.11.20.xpi" }
+                { "version": "2019.1.12", "update_link": "https://vitaliyvstyle.github.io/webextensions/new_tab_page-2019.1.12.xpi" }
             ]
         },
         "_002_vitaliyvstyle-theme@vitaliy.ru": {
