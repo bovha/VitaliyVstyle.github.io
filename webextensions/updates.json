@@ -15,6 +15,11 @@
                 { "version": "2018.12.17", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_buttons.2018.12.17.xpi" }
             ]
         },
+        "add_toolbar_button@vitaliy.ru": {
+            "updates": [
+                { "version": "2019.1.13", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_button.2019.1.13.xpi" }
+            ]
+        },
         "async_run_applications@vitaliy.ru": {
             "updates": [
                 { "version": "2018.12.17", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2018.12.17.xpi" }
