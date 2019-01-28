@@ -37,7 +37,7 @@
         },
         "long_left_click@vitaliy.ru": {
             "updates": [
-                { "version": "2018.12.18", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2018.12.18.xpi" }
+                { "version": "2019.1.28", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2019.1.28.xpi" }
             ]
         }
     }
