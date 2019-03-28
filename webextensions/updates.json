@@ -15,14 +15,9 @@
                 { "version": "2019.3.7", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_buttons.2019.3.7.xpi" }
             ]
         },
-        "add_toolbar_button@vitaliy.ru": {
-            "updates": [
-                { "version": "2019.1.13", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_button.2019.1.13.xpi" }
-            ]
-        },
         "async_run_applications@vitaliy.ru": {
             "updates": [
-                { "version": "2019.3.27", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2019.3.27.xpi" }
+                { "version": "2019.3.28", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2019.3.28.xpi" }
             ]
         },
         "right_click_close_tab@vitaliy.ru": {
