@@ -1,4 +1,4 @@
-Стиль для [user_chrome_files.zip](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/blob/master/stylesff/toolbars/user_chrome_files.zip), но можно попробовать применить в userChrome.css, userContent.css     
+full_theme.zip это стили для [user_chrome_files.zip](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/blob/master/stylesff/toolbars/user_chrome_files.zip), но можно попробовать применить в userChrome.css, userContent.css     
 кроме файлов agent_style.css css_agent.css.
 
 Браузер: Firefox 65 +     
@@ -9,3 +9,5 @@
 Использовать с тёмной темой [vitaliyvstyle_theme-xxxx.xx.xx.xpi](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/webextensions) или встроенной,     
 или же закомментировать в user_chrome_files/user_style.css строку     
 @import url("./custom_styles/common_dark.css");
+
+backgrounds.zip это другие фоновые изображения (можно использовать своё) для common_dark.css, можно заменить в custom_styles/png/  background.png
