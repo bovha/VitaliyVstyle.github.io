@@ -1,5 +1,5 @@
-full_theme.zip это стили для [user_chrome_files.zip](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/blob/master/stylesff/toolbars/user_chrome_files.zip), но можно попробовать применить в userChrome.css, userContent.css     
-кроме файлов agent_style.css css_agent.css.
+full_theme.zip это стили для [user_chrome_files.zip](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/blob/master/stylesff/toolbars/user_chrome_files.zip),      
+но можно попробовать применить в userChrome.css, userContent.css кроме файлов agent_style.css css_agent.css.
 
 Браузер: Firefox 65 +     
 ОС: Linux, Windows
