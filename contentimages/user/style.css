@@ -42,7 +42,7 @@ color: #00e0ca;
 }
 
 #templatemo {
-background: transparent url("container.png") repeat scroll left top;
+background: transparent url("container.svg") repeat scroll left top;
 border-collapse: collapse;
 margin: 0 auto;
 min-width: 20em;
