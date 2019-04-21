@@ -5,7 +5,7 @@
 <title>Статистика скачиваний</title>
 <meta name="keywords" content="" >
 <meta name="description" content="" >
-<link rel="shortcut icon" href="AddsToolbarandButtons.png"  sizes="16x16" type="image/png">
+<link rel="shortcut icon" href="icon.svg"  sizes="16x16" type="image/svg+xml">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
