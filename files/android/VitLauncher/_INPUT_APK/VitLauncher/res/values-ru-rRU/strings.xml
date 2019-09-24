@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_video">Видео</string>
+    <string name="str_app">Приложения</string>
+    <string name="str_music">Музыка</string>
+    <string name="str_local">Избранное</string>
+    <string name="str_nospace">Панель полная!</string>
+    <string name="str_add">Добавить</string>
+    <string name="str_installpac">Приложение не установлено!</string>
+</resources>

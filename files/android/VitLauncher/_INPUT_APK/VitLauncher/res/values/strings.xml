@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vit Launcher</string>
+    <string name="str_video">Video</string>
+    <string name="str_app">Apps</string>
+    <string name="str_music">Music</string>
+    <string name="str_local">Favorites</string>
+    <string name="str_nospace">Shortcuts no space!</string>
+    <string name="str_add">Add</string>
+    <string name="str_installpac">Application not installed</string>
+</resources>

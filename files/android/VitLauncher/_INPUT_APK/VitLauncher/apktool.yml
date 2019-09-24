@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: VitLauncher.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '27'
+  targetSdkVersion: '27'
+sharedLibrary: false
+sparseResources: true
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.4.1_0303
+versionInfo:
+  versionCode: '27'
+  versionName: 1.0

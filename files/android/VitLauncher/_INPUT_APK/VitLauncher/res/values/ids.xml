@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="relative_layout" />
+    <item type="id" name="frameLayout" />
+    <item type="id" name="item_type" />
+    <item type="id" name="item_sel" />
+    <item type="id" name="item_name" />
+    <item type="id" name="item_bg" />
+    <item type="id" name="grid_add_apps" />
+    <item type="id" name="img_hover_item" />
+    <item type="id" name="memory_container" />
+    <item type="id" name="memory_used" />
+    <item type="id" name="memory_circle" />
+    <item type="id" name="layout_rect_group" />
+    <item type="id" name="layout_video" />
+    <item type="id" name="img_video" />
+    <item type="id" name="layout_music" />
+    <item type="id" name="img_music" />
+    <item type="id" name="layout_app" />
+    <item type="id" name="img_app" />
+    <item type="id" name="layout_local" />
+    <item type="id" name="img_local" />
+    <item type="id" name="layout_setting" />
+    <item type="id" name="img_setting" />
+    <item type="id" name="layout_clean" />
+    <item type="id" name="layout_googleplay" />
+    <item type="id" name="layout_kodi" />
+    <item type="id" name="img_kodi" />
+    <item type="id" name="layout_youtube" />
+    <item type="id" name="img_youtube" />
+    <item type="id" name="img_googleplay" />
+    <item type="id" name="layout_web" />
+    <item type="id" name="img_web" />
+    <item type="id" name="tx_time" />
+    <item type="id" name="tx_date" />
+    <item type="id" name="image_icon" />
+    <item type="id" name="tx_title" />
+    <item type="id" name="gl_shortcut" />
+    <item type="id" name="layout_menu" />
+    <item type="id" name="gv_shortcut" />
+    <item type="id" name="list_status" />
+    <item type="id" name="layout_root" />
+    <item type="id" name="layout_main" />
+    <item type="id" name="layout_homepage" />
+    <item type="id" name="second_screen" />
+    <item type="id" name="hover_view" />
+</resources>
