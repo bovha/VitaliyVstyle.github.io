@@ -1,5 +1,4 @@
-Лаунчер для android-боксов     
-проверялось только на процессоре Amlogic S905X2     
+Лаунчер для android-боксов на процессоре Amlogic S905X2     
 
 В _OUT_APK находится готовый VitLauncher.apk     
 
