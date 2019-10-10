@@ -3,7 +3,7 @@ full_theme.zip - стили для [user_chrome_files.zip](https://github.com/Vi
 или же закомментировать в user_chrome_files/user_style.css строку     
 @import url("./custom_styles/common_dark.css");
 
-backgrounds.zip это другие фоновые изображения (можно использовать своё) для common_dark.css,     
+backgrounds.zip - другие фоновые изображения (или использовать своё) для common_dark.css,     
 можно заменить в custom_styles/png/  background.png
 
 Браузер: Firefox 65 +     
