@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ -n "$1" ]; then
-    SCRIPT_DIR=$(dirname "$0")
+    SDIR=$(dirname "$0")
     DIR=""
-    read -r DIR < "$SCRIPT_DIR/directory.txt"
+    read -r DIR < "$SDIR/directory.txt"
     if [ -z "$DIR" ]; then
         DIR="$HOME"
-        echo "$DIR" > "$SCRIPT_DIR/directory.txt"
+        echo "$DIR" > "$SDIR/directory.txt"
     fi
     cd "$DIR" || {
         DIR="$HOME"
@@ -17,7 +17,7 @@ if [ -n "$1" ]; then
         exit 1
     fi
     if [ "$ZDIR" != "$DIR" ]; then
-        echo "$ZDIR" > "$SCRIPT_DIR/directory.txt"
+        echo "$ZDIR" > "$SDIR/directory.txt"
         cd "$ZDIR" || exit 1
     fi
     mate-terminal --profile=youtube-dl --command "$1"
