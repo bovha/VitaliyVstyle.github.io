@@ -12,18 +12,20 @@ if [ -n "$1" ]; then
         DIR="$HOME"
         cd "$DIR" || exit 1
     }
-    DIR=$(zenity --file-selection --directory --title="Выбрать директорию")
+    ZDIR=$(zenity --file-selection --directory --title="Выбрать директорию")
     if [ "$?" -eq 1 ]; then
         exit 1
     fi
-    echo "$DIR" > "$SCRIPT_DIR/directory.txt"
-    cd "$DIR" || exit 1
+    if [ "$ZDIR" != "$DIR" ]; then
+        echo "$ZDIR" > "$SCRIPT_DIR/directory.txt"
+        cd "$ZDIR" || exit 1
+    fi
     NAME=$(zenity --entry --title="Название файла" --text="Введите название файла (без расширения):" --entry-text="mp4video")
     if [ "$?" -eq 1 ]; then
         exit 1
     fi
     NAME=$(echo "$NAME" | tr -d "[:space:][:punct:][:cntrl:]")
-    if [ "$NAME" = "" ]; then
+    if [ -z "$NAME" ]; then
         NAME="mp4video"
     fi
     mate-terminal --profile=youtube-dl --command "ffmpeg -i $1 -c:a copy -c:v copy -f mp4 $NAME.mp4"
