@@ -753,19 +753,6 @@
 
     move-result v2
 
-    iget-object v4, p0, Lcom/droidlogic/vitlauncher/StatusLoader;->mContext:Landroid/content/Context;
-
-    invoke-static {v4}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_0
-
-    if-le v1, v5, :cond_0
-
-    add-int/lit8 v1, v1, -0xc
-
-    :cond_0
     const-string/jumbo v3, ""
 
     if-lt v1, v6, :cond_1
