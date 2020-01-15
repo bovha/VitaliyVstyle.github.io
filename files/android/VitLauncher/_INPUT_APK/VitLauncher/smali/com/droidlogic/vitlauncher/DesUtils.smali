@@ -296,56 +296,6 @@
     return-object v1
 .end method
 
-.method public static isAmlogicChip()Z
-    .locals 6
-
-    const/4 v5, 0x0
-
-    const-string/jumbo v0, "7c0f13b6d5986e65"
-
-    :try_start_0
-    new-instance v1, Lcom/droidlogic/vitlauncher/DesUtils;
-
-    const-string/jumbo v3, "gjaoun"
-
-    invoke-direct {v1, v3}, Lcom/droidlogic/vitlauncher/DesUtils;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v1}, Lcom/droidlogic/vitlauncher/DesUtils;->GetCpuInfo(Lcom/droidlogic/vitlauncher/DesUtils;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v3}, Lcom/droidlogic/vitlauncher/DesUtils;->decrypt(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v1, v0}, Lcom/droidlogic/vitlauncher/DesUtils;->decrypt(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-result v3
-
-    const/4 v4, -0x1
-
-    if-eq v3, v4, :cond_0
-
-    const/4 v3, 0x1
-
-    return v3
-
-    :cond_0
-    return v5
-
-    :catch_0
-    move-exception v2
-
-    return v5
-.end method
-
-
 # virtual methods
 .method public decrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 2

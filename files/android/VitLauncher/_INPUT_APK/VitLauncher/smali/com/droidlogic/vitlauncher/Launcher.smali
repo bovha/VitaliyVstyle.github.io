@@ -87,8 +87,6 @@
 
 .field private final net_change_action:Ljava/lang/String;
 
-.field private final outputmode_change_action:Ljava/lang/String;
-
 .field private saveHomeFocusView:Landroid/view/View;
 
 .field private saveModeBeforeCustom:I
@@ -179,10 +177,6 @@
     const-string/jumbo v0, "android.net.wifi.RSSI_CHANGED"
 
     iput-object v0, p0, Lcom/droidlogic/vitlauncher/Launcher;->wifi_signal_action:Ljava/lang/String;
-
-    const-string/jumbo v0, "android.amlogic.settings.CHANGE_OUTPUT_MODE"
-
-    iput-object v0, p0, Lcom/droidlogic/vitlauncher/Launcher;->outputmode_change_action:Ljava/lang/String;
 
     iput v2, p0, Lcom/droidlogic/vitlauncher/Launcher;->current_screen_mode:I
 
@@ -855,15 +849,6 @@
 
     invoke-static {v3, v4}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {}, Lcom/droidlogic/vitlauncher/DesUtils;->isAmlogicChip()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    invoke-virtual {p0}, Lcom/droidlogic/vitlauncher/Launcher;->finish()V
-
-    :cond_0
     new-instance v3, Lcom/droidlogic/vitlauncher/AppDataLoader;
 
     invoke-direct {v3, p0}, Lcom/droidlogic/vitlauncher/AppDataLoader;-><init>(Landroid/content/Context;)V
@@ -953,10 +938,6 @@
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string/jumbo v3, "android.intent.action.TIME_SET"
-
-    invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
-
-    const-string/jumbo v3, "android.amlogic.settings.CHANGE_OUTPUT_MODE"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
