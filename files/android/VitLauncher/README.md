@@ -1,4 +1,4 @@
-Лаунчер для android-боксов на процессоре Amlogic S905X2       
+Лаунчер для приставок на android       
 
 VitLauncher_v1.apk.zip     
 <img src="https://raw.githubusercontent.com/VitaliyVstyle/VitaliyVstyle.github.io/master/files/android/VitLauncher/image_v1_01.png"/>     
