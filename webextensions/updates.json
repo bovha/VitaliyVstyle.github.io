@@ -2,37 +2,67 @@
     "addons": {
         "_001_newtabpage@vitaliy.ru": {
             "updates": [
-                { "version": "2019.10.1", "update_link": "https://vitaliyvstyle.github.io/webextensions/new_tab_page-2019.10.1.xpi" }
+                {
+                    "version": "2019.10.1",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/new_tab_page-2019.10.1.xpi"
+                }
             ]
         },
         "_002_vitaliyvstyle-theme@vitaliy.ru": {
             "updates": [
-                { "version": "2019.4.14", "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme-2019.4.14.xpi" }
+                {
+                    "version": "2019.4.14",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme-2019.4.14.xpi"
+                }
             ]
         },
         "add_toolbar_buttons@vitaliy.ru": {
             "updates": [
-                { "version": "2019.12.10", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_buttons.2019.12.10.xpi" }
+                {
+                    "version": "2019.12.10",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/add_toolbar_buttons.2019.12.10.xpi"
+                }
             ]
         },
         "async_run_applications@vitaliy.ru": {
             "updates": [
-                { "version": "2019.9.1", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2019.9.1.xpi" }
+                {
+                    "version": "2019.9.1",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/async_run_applications.2019.9.1.xpi"
+                }
             ]
         },
         "right_click_close_tab@vitaliy.ru": {
             "updates": [
-                { "version": "2019.6.30", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/right_click_close_tab.2019.6.30.xpi" }
+                {
+                    "version": "2019.6.30",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/right_click_close_tab.2019.6.30.xpi"
+                }
             ]
         },
         "tabs_focus@vitaliy.ru": {
             "updates": [
-                { "version": "2019.6.30", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/tabs_focus.2019.6.30.xpi" }
+                {
+                    "version": "2019.6.30",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/tabs_focus.2019.6.30.xpi"
+                }
             ]
         },
         "long_left_click@vitaliy.ru": {
             "updates": [
-                { "version": "2019.4.4", "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2019.4.4.xpi" }
+                {
+                    "version": "2019.4.4",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2019.4.4.xpi"
+                },
+                {
+                    "version": "2020.2.23",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2020.2.23.xpi",
+                    "browser_specific_settings": {
+                        "gecko": {
+                            "strict_min_version": "69.0"
+                        }
+                    }
+                }
             ]
         }
     }
