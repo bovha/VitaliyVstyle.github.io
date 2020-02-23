@@ -57,7 +57,7 @@
                 {
                     "version": "2020.2.23",
                     "update_link": "https://vitaliyvstyle.github.io/webextensions/experiments/long_left_click.2020.2.23.xpi",
-                    "browser_specific_settings": {
+                    "applications": {
                         "gecko": {
                             "strict_min_version": "69.0"
                         }
