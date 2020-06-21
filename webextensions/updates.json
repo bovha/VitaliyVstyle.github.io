@@ -15,8 +15,8 @@
                     "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme-2019.4.14.xpi"
                 },
                 {
-                    "version": "2020.2.29",
-                    "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme-2020.2.29.xpi",
+                    "version": "2020.6.21",
+                    "update_link": "https://vitaliyvstyle.github.io/webextensions/vitaliyvstyle_theme-2020.6.21.xpi",
                     "applications": {
                         "gecko": {
                             "strict_min_version": "70.0"
