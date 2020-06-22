@@ -5,7 +5,7 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>2020.05.08</em:version>
+            <em:version>2020.06.22</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <!-- Basilisk -->
